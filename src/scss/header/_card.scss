@@ -1,0 +1,191 @@
+.title-carrito {
+  font-size: 1.8rem;
+  margin: 0;
+  margin: 15px 0;
+}
+
+.subtitle-lista {
+  margin: 0;
+  margin-bottom: 10px;
+  border-bottom: 5px solid rgb(44, 44, 44);
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.card-relative {
+  position: relative;
+}
+
+.btn-agregar {
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(196, 33, 4);
+  color: #fff;
+  position: absolute;
+  right: -2%;
+  bottom: 18%;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.carrito-responsive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: left 0.4s ease-in-out;
+}
+
+.text-end {
+  text-align: end;
+  i {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.formulario {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+  @media (min-width: 450px) {
+    max-width: 450px;
+    width: 90%;
+  }
+}
+
+.title-carrito {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.contenedor-menu {
+  width: 100%;
+  height: 350px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.carrito-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(126, 126, 126);
+  border-radius: 5px;
+  color: #fff;
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+  }
+  .carrito-info {
+    text-transform: capitalize;
+    font-size: 1rem;
+  }
+}
+
+.campo {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 65%;
+    border: none;
+    border: 2px solid #cacaca;
+    border-radius: 5px;
+    padding: 5px;
+  }
+}
+
+.campo-btn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.btn {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.btn-cancelar {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    border: 1px solid rgb(88, 88, 88);
+    background-color: rgb(88, 88, 88);
+    color: #fff;
+  }
+}
+
+.btn-envio {
+  background-color: rgb(55, 172, 40);
+  color: rgb(238, 237, 237);
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: darken(rgb(40, 148, 26), 0.9);
+  }
+}
+
+.campo-select {
+  display: flex;
+  flex-direction: column;
+  select {
+    width: 60%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #cacaca;
+  }
+}
+
+.absolute-ocultar-carrito {
+  position: absolute;
+  top: 2%;
+  font-size: 2.5rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.ocultar {
+  left: 100%;
+}
+
+.mostrar {
+  left: 0%;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.fondo-negro {
+  background-color: rgba(49, 49, 49, 0.26);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

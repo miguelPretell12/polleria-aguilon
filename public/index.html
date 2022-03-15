@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="build/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="shortcut icon" href="build/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-enlace contenedor">
+            <a href="/">
+                <img src="build/img/logo.png" alt="">
+            </a>
+            <nav class="enlaces">
+                <a href="#">Inicio</a>
+                <a href="#">Ofertas</a>
+                <a href="#">Nosotros</a>
+                <a href="#" class="fas fa-shopping-cart carrito-mostrar"></a>
+            </nav>
+        </div>
+
+        <div class="contenedor center-flex">
+            <img src="build/img/Background-image.png" alt="">
+        </div>
+        <div style="height: 150px; overflow: hidden;" class="absolute-bottom"><svg viewBox="0 0 500 150"
+                preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-0.90,10.35 C206.77,5.44 196.05,160.35 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <div class="ofertas-card">
+        <div class="contenedor">
+            <h1 class="text-center titulo-oferta">Ofertas</h1>
+
+            <div class="card-list">
+                <div class="card-relative">
+                    <img src="build/img/parrilla.png" alt="img-1">
+                    <div class="card-info text-center">
+                        <p>Precio: S./<span>50.00</span></p>
+                    </div>
+                    <button class="fas fa-plus btn-agregar"></button>
+                </div>
+                <div class="card-relative">
+                    <img src="build/img/oferta2.webp" alt="img-2">
+                    <div class="card-info text-center">
+                        <p>Precio: S./<span>15.90</span></p>
+                    </div>
+                    <button class="fas fa-plus btn-agregar"></button>
+                </div>
+                <div class="card-relative">
+                    <img src="build/img/oferta3.jpg" alt="img-3">
+                    <div class="card-info text-center">
+                        <p>Precio: S./<span>74.90</span></p>
+                    </div>
+                    <button class="fas fa-plus btn-agregar"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+    <div class="contacto">
+
+    </div> -->
+
+    <div class="carrito-responsive ocultar " id="sub-ocultar">
+        <div class="fondo-negro d-none">
+        </div>
+        <form action="#" class="formulario">
+            <i class="far fa-arrow-alt-circle-right absolute-ocultar-carrito" id="flecha"></i>
+            <h3 class="text-center title-carrito">Carrito</h3>
+            <div class="contenedor-menu contenedor">
+                <h4 class="subtitle-lista">Lista de Pedidos</h4>
+                <div class="carrito-grid">
+                    <img src="build/img/parrilla.png" alt="img-1">
+                    <div class="carrito-info">
+                        <div class="text-end">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                        <p>Parrilla Familiar</p>
+                        <p class="precio">Precio: <span>15.00</span></p>
+                        <p>Cantidad: <input type="number"></p>
+                    </div>
+                </div>
+                <div class="carrito-grid">
+                    <img src="build/img/parrilla.png" alt="img-1">
+                    <div class="carrito-info">
+                        <div class="text-end">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                        <p>Parrilla Familiar</p>
+                        <p class="precio">Precio: <span>15.00</span></p>
+                        <p>Cantidad: <input type="number" step="1"></p>
+                    </div>
+                </div>
+                <div class="carrito-grid">
+                    <img src="build/img/parrilla.png" alt="img-1">
+                    <div class="carrito-info">
+                        <div class="text-end">
+                            <i class="far fa-times-circle"></i>
+                        </div>
+                        <p>Parrilla Familiar</p>
+                        <p class="precio">Precio: <span>15.00</span></p>
+                        <p>Cantidad: <input type="number"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="campo contenedor">
+                <label for="">Nro Celular:</label>
+                <input type="tel">
+            </div>
+            <div class="campo-select">
+                <label for="">Forma de Pago</label>
+                <select name="" id="">
+                    <option disabled>seleccionar</option>
+                    <option value="">Yape</option>
+                    <option value="">Efectivo</option>
+                </select>
+            </div>
+            <div class="campo-btn">
+                <button class="btn btn-cancelar">Cancelar</button>
+                <button class="btn btn-envio"> Enviar Pedido</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="background-black">
+        <p class="text-center">
+            &copy; Copyright || Polleria Aguilon 2022
+        </p>
+    </footer>
+    <script src="build/js/script.js"></script>
+</body>
+
+</html>
