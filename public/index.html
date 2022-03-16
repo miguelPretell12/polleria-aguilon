@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Polleria Aguilón</title>
     <link rel="stylesheet" href="build/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="build/css/app.css">
     <link rel="shortcut icon" href="build/img/logo.png" type="image/x-icon">
@@ -13,16 +13,18 @@
 
 <body>
     <header class="header">
-        <div class="nav-enlace contenedor">
-            <a href="/">
-                <img src="build/img/logo.png" alt="">
-            </a>
-            <nav class="enlaces">
-                <a href="#">Inicio</a>
-                <a href="#">Ofertas</a>
-                <a href="#">Nosotros</a>
-                <a href="#" class="fas fa-shopping-cart carrito-mostrar"></a>
-            </nav>
+        <div class="enlace-header">
+            <div class="nav-enlace contenedor">
+                <a href="/">
+                    <img src="build/img/logo.png" alt="">
+                </a>
+                <nav class="enlaces">
+                    <a href="#">Inicio</a>
+                    <a href="#">Ofertas</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#" class="fas fa-shopping-cart carrito-mostrar"><span id="carrito-cantidad"></span></a>
+                </nav>
+            </div>
         </div>
 
         <div class="contenedor center-flex">
@@ -42,23 +44,26 @@
                 <div class="card-relative">
                     <img src="build/img/parrilla.png" alt="img-1">
                     <div class="card-info text-center">
-                        <p>Precio: S./<span>50.00</span></p>
+                        <p class="m-0 mt-1 text-left title-card">Parrilla Familiar</p>
+                        <p class="m-0 mt-1">Precio: S./<span id="precio-val">50.00</span></p>
                     </div>
-                    <button class="fas fa-plus btn-agregar"></button>
+                    <button class="fas fa-plus btn-agregar" data-id="1"></button>
                 </div>
                 <div class="card-relative">
                     <img src="build/img/oferta2.webp" alt="img-2">
                     <div class="card-info text-center">
-                        <p>Precio: S./<span>15.90</span></p>
+                        <p class="m-0 mt-1 text-left title-card ">Parrilla Familiar2</p>
+                        <p class="m-0 mt-1">Precio: S./<span id="precio-val">15.90</span></p>
                     </div>
-                    <button class="fas fa-plus btn-agregar"></button>
+                    <button class="fas fa-plus btn-agregar" data-id="2"></button>
                 </div>
                 <div class="card-relative">
                     <img src="build/img/oferta3.jpg" alt="img-3">
                     <div class="card-info text-center">
-                        <p>Precio: S./<span>74.90</span></p>
+                        <p class="m-0 mt-1 text-left title-card">Parrilla Familiar3</p>
+                        <p class="m-0 mt-1">Precio: S./<span id="precio-val">74.90</span></p>
                     </div>
-                    <button class="fas fa-plus btn-agregar"></button>
+                    <button class="fas fa-plus btn-agregar" data-id="3"></button>
                 </div>
             </div>
         </div>
@@ -66,53 +71,24 @@
     <!-- 
     <div class="contacto">
 
-    </div> -->
+    </div> 
+    -->
 
     <div class="carrito-responsive ocultar " id="sub-ocultar">
         <div class="fondo-negro d-none">
         </div>
         <form action="#" class="formulario">
-            <i class="far fa-arrow-alt-circle-right absolute-ocultar-carrito" id="flecha"></i>
-            <h3 class="text-center title-carrito">Carrito</h3>
-            <div class="contenedor-menu contenedor">
+            <div class="sticky-top b-bottom-1">
+                <i class="far fa-arrow-alt-circle-right absolute-ocultar-carrito" id="flecha"></i>
+                <h3 class="text-center title-carrito">Carrito</h3>
+            </div>
+            <div class=" contenedor-menu contenedor">
                 <h4 class="subtitle-lista">Lista de Pedidos</h4>
-                <div class="carrito-grid">
-                    <img src="build/img/parrilla.png" alt="img-1">
-                    <div class="carrito-info">
-                        <div class="text-end">
-                            <i class="far fa-times-circle"></i>
-                        </div>
-                        <p>Parrilla Familiar</p>
-                        <p class="precio">Precio: <span>15.00</span></p>
-                        <p>Cantidad: <input type="number"></p>
-                    </div>
-                </div>
-                <div class="carrito-grid">
-                    <img src="build/img/parrilla.png" alt="img-1">
-                    <div class="carrito-info">
-                        <div class="text-end">
-                            <i class="far fa-times-circle"></i>
-                        </div>
-                        <p>Parrilla Familiar</p>
-                        <p class="precio">Precio: <span>15.00</span></p>
-                        <p>Cantidad: <input type="number" step="1"></p>
-                    </div>
-                </div>
-                <div class="carrito-grid">
-                    <img src="build/img/parrilla.png" alt="img-1">
-                    <div class="carrito-info">
-                        <div class="text-end">
-                            <i class="far fa-times-circle"></i>
-                        </div>
-                        <p>Parrilla Familiar</p>
-                        <p class="precio">Precio: <span>15.00</span></p>
-                        <p>Cantidad: <input type="number"></p>
-                    </div>
-                </div>
+
             </div>
             <div class="campo contenedor">
-                <label for="">Nro Celular:</label>
-                <input type="tel">
+                <label for="telefono">Nro Celular:</label>
+                <input type="tel" id="telefono">
             </div>
             <div class="campo-select">
                 <label for="">Forma de Pago</label>
@@ -122,7 +98,10 @@
                     <option value="">Efectivo</option>
                 </select>
             </div>
-            <div class="campo-btn">
+            <div class="campo">
+                <input type="file" accept="image/gif, image/jpeg, image/png">
+            </div>
+            <div class="campo-btn sticky-bottom background-color-white">
                 <button class="btn btn-cancelar">Cancelar</button>
                 <button class="btn btn-envio"> Enviar Pedido</button>
             </div>

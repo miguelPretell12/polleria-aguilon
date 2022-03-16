@@ -17,6 +17,18 @@
   position: relative;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-1 {
+  margin: 10px;
+}
+
 .btn-agregar {
   border: none;
   padding: 10px;
@@ -25,8 +37,8 @@
   color: #fff;
   position: absolute;
   right: -2%;
-  bottom: 18%;
-  font-size: 1.8rem;
+  bottom: 20%;
+  font-size: 2.5rem;
   cursor: pointer;
 }
 
@@ -41,6 +53,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   transition: left 0.4s ease-in-out;
+  z-index: 3;
 }
 
 .text-end {
@@ -159,7 +172,7 @@
 
 .absolute-ocultar-carrito {
   position: absolute;
-  top: 2%;
+  top: 0%;
   font-size: 2.5rem;
   z-index: 1;
   cursor: pointer;
@@ -188,4 +201,46 @@
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.carrito-mostrar {
+  position: relative;
+}
+
+#carrito-cantidad {
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  position: absolute;
+  top: -50%;
+  right: -80%;
+  background-color: rgb(199, 27, 15);
+  color: #fff;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #fff;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
+.background-color-white {
+  background-color: #fff;
+}
+
+.b-bottom-1 {
+  border-bottom: 1px solid #000;
 }

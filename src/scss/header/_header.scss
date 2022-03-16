@@ -29,11 +29,7 @@ img {
   display: flex;
   justify-content: center;
   height: 100%;
-  align-items: flex-start;
-
-  @media (min-width: 748px) {
-    align-items: center;
-  }
+  align-items: center;
 
   img {
     width: 70%;
@@ -68,6 +64,16 @@ img {
   @media (min-width: 748px) {
     height: 90vh;
   }
+}
+
+.enlace-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .nav-enlace {
