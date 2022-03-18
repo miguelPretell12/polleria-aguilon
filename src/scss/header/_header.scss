@@ -86,10 +86,13 @@ img {
   }
 
   .enlaces {
-    width: 300px;
+    width: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // @media (min-width: 478px) {
+    //   display: flex;
+    // }
     a {
       color: #fff;
       font-size: 1.2rem;

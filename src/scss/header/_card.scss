@@ -33,7 +33,6 @@
   border: none;
   padding: 10px;
   border-radius: 50%;
-  background-color: rgb(196, 33, 4);
   color: #fff;
   position: absolute;
   right: -2%;
@@ -243,4 +242,30 @@
 
 .b-bottom-1 {
   border-bottom: 1px solid #000;
+}
+
+.fa-bars {
+  font-size: 2.1rem;
+  color: #fff;
+  cursor: pointer;
+
+  @media (min-width: 478px) {
+    display: none;
+  }
+}
+
+.input-50 {
+  width: 50%;
+}
+
+.fas {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.background-green {
+  background-color: rgb(3, 143, 15);
+}
+
+.background-red {
+  background-color: rgb(196, 33, 4);
 }
